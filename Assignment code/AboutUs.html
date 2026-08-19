@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the Animation and Multimedia Club, its mission and committee.">
+
+    <title>About Us | Animation &amp; Multimedia Club</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap JavaScript controls the mobile Navigation -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Shared website styles -->
+    <link rel="stylesheet" href="css/SharedStyles.css">
+
+    <!-- About Page styles -->
+    <link rel="stylesheet" href="css/AboutStyles.css">
+</head>
+
+<body class="about-page">
+
+    <!-- Shared Navigation -->
+    <nav class = "navbar navbar-expand-lg bg-black club-navbar" 
+                data-bs-theme="dark" aria-label="Main navigation">
+        <div class = "container-fluid navigation-container">
+
+            <!-- Logo-->
+            <!-- navbar-brand = Bootstrap class for brand link -->
+            <a class = "navbar-brand club-brand" href="index.html" data-nav="home">
+                <!-- bi bi-play = Bootstrap Icon for Play -->
+                <i class = "bi bi-play"></i>
+
+                <span>
+                    <Strong> AM CLUB</Strong>
+                    <small>Animation & Multimedia Club</small>
+                </span>
+            </a>
+
+            <!-- Mobile button-->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavigation"
+                    aria-controls="mainNavigation"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            
+            <!--Links-->
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-nav="home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="AboutUs.html" data-nav="about" aria-current="page">
+                            About Us
+                        </a>    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html" data-nav="projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html" data-nav="tutorials">
+                            Tutorials
+                        </a>                        
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-nav="events">
+                            Events
+                        </a>
+                    </li>
+                </ul>        
+                
+                <a class="btn join-button" href="contact.html" data-nav="contact">
+                    Join Us
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- About Hero -->
+        <section class="about-page-hero" aria-labelledby="aboutPageTitle">
+            <div class="container-fluid about-page-container">
+
+                <div class="about-hero-box">
+                    <h1 id="aboutPageTitle">About Our Club</h1>
+
+                    <p class="about-hero-topics">
+                        <span>Background</span>
+                        <span>Mission</span>
+                        <span>Committee</span>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Club Background -->
+        <section class="club-background-section" aria-labelledby="backgroundTitle">
+            <div class="container-fluid about-page-container background-grid">
+
+                <div class="background-copy">
+                    <p class="section-kicker">Our purpose</p>
+
+                    <h2 id="backgroundTitle">Club Background</h2>
+
+                    <p>
+                        The Animation &amp; Multimedia Club is a student creative
+                        community where members explore ideas, practise digital
+                        skills and learn from one another.
+                    </p>
+
+                    <p>
+                        The club welcomes students who are interested in creating,
+                        learning and collaborating through animation and multimedia.
+                    </p>
+                </div>
+
+                <div class="background-art" aria-hidden="true">
+                    <span class="art-grid"></span>
+                    <span class="art-ring art-ring-large"></span>
+                    <span class="art-ring art-ring-small"></span>
+                    <span class="art-panel art-panel-one"></span>
+                    <span class="art-panel art-panel-two"></span>
+                    <span class="art-signal"></span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Mission and Objectives -->
+        <section class="mission-section" aria-labelledby="missionTitle">
+            <div class="container-fluid about-page-container">
+
+                <h2 id="missionTitle">Mission and Objectives</h2>
+
+                <div class="mission-grid">
+
+                    <article class="mission-card mission-create">
+                        <div class="mission-art" aria-hidden="true">
+                            <span></span>
+                        </div>
+
+                        <i class="bi bi-bezier2" aria-hidden="true"></i>
+                        <h3>Create</h3>
+                        <p>Develop ideas and express them through creative digital work.</p>
+                    </article>
+
+                    <article class="mission-card mission-learn">
+                        <div class="mission-art" aria-hidden="true">
+                            <span></span>
+                        </div>
+
+                        <i class="bi bi-lightbulb" aria-hidden="true"></i>
+                        <h3>Learn</h3>
+                        <p>Build practical skills through practice and knowledge sharing.</p>
+                    </article>
+
+                    <article class="mission-card mission-connect">
+                        <div class="mission-art" aria-hidden="true">
+                            <span></span>
+                        </div>
+
+                        <i class="bi bi-people" aria-hidden="true"></i>
+                        <h3>Connect</h3>
+                        <p>Collaborate with students and exchange constructive feedback.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Committee Members -->
+        <section class="committee-section" aria-labelledby="committeeTitle">
+            <div class="container-fluid about-page-container">
+
+                <h2 id="committeeTitle">Committee Members</h2>
+
+                <div class="committee-grid">
+
+                    <article class="member-card member-leader">
+                        <div class="member-photo-frame">
+                            <img src="images/WongTingkai.jpeg" alt="Wong Ting Kai" height="100%" width="100%">
+                            
+                        </div>
+
+                        <span class="leader-badge">Leader</span>
+                        <h3>Wong Ting Kai</h3>
+                        <p>Leader</p>
+                    </article>
+
+                    <article class="member-card">
+                        <div class="member-photo-frame">
+                            <img src="images/XINGHUA.jpeg" alt="Jee Xin Hua">
+                        </div>
+
+                        <h3>Jee Xing Hua</h3>
+                        <p>Member</p>
+                    </article>
+
+                    <article class="member-card">
+                        <div class="member-photo-frame">
+                            <img src="images/Member_3.jpeg" alt="Teoh Zi Yan">
+                        </div>
+
+                        <h3>Teoh Zi Yan</h3>
+                        <p>Member</p>
+                    </article>
+
+                    <article class="member-card">
+                        <div class="member-photo-frame">
+                            <img src="images/Member_4.jpeg" alt="Chiew Hou Ben">
+                        </div>
+
+                        <h3>Chiew Hou Ben</h3>
+                        <p>Member</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+        <div class="container-fluid footer-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <i class="bi bi-play" aria-hidden="true"></i>
+
+                        <span>
+                            <strong>AM CLUB</strong>
+                            <small>Animation &amp; Multimedia Club</small>
+                        </span>
+                    </a>
+
+                    <p>
+                        Creating, learning and sharing ideas through animation
+                        and multimedia.
+                    </p>
+                </div>
+
+                <nav class="footer-group" aria-label="Footer quick links">
+                    <h2>Quick Links</h2>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact / Join Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-group">
+                    <h2>Connect</h2>
+
+                    <ul>
+                        <li>
+                            <a href="#" aria-label="Instagram demonstration link">
+                                <i class="bi bi-instagram" aria-hidden="true"></i>
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="YouTube demonstration link">
+                                <i class="bi bi-youtube" aria-hidden="true"></i>
+                                YouTube
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Facebook demonstration link">
+                                <i class="bi bi-facebook" aria-hidden="true"></i>
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-group footer-contact">
+                    <h2>Contact</h2>
+
+                    <ul>
+                        <li>
+                            <a href="mailto:amclub@example.com">
+                                <i class="bi bi-envelope" aria-hidden="true"></i>
+                                amclub@example.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+60123456789">
+                                <i class="bi bi-telephone" aria-hidden="true"></i>
+                                +60 12-345 6789
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                            UTAR Kampar
+                        </li>
+                    </ul>
+
+                    <small>Demo contact for assignment</small>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <small>&copy; 2026 Animation &amp; Multimedia Club</small>
+                <small>Create. Learn. Collaborate.</small>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,740 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #090909;
+
+    color: #ffffff;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.tutorial-details-page {
+    width: 100%;
+
+    padding-bottom: 80px;
+}
+
+.details-container {
+    width: calc(100% - 40px);
+
+    max-width: 1360px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-container {
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #a6a6a6;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.back-button i {
+    color: #c7ff14;
+
+    font-size: 18px;
+}
+
+.back-button:hover {
+    color: #c7ff14;
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================================================
+   TUTORIAL INTRO
+========================================================= */
+
+.tutorial-intro {
+    width: calc(100% - 40px);
+
+    max-width: 1360px;
+
+    min-height: 520px;
+
+    margin: 0 auto 45px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border: 3px solid #383838;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    background: #141414;
+}
+
+
+/* ---------- Intro Image ---------- */
+
+.intro-image {
+    min-height: 520px;
+
+    background: #090909;
+
+    overflow: hidden;
+}
+
+.intro-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.tutorial-intro:hover .intro-image img {
+    transform: scale(1.02);
+}
+
+
+/* ---------- Intro Content ---------- */
+
+.intro-content {
+    padding: 60px 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background: #141414;
+}
+
+
+/* ---------- Topic ---------- */
+
+.intro-tag {
+    align-self: flex-start;
+
+    padding: 7px 13px;
+
+    margin-bottom: 20px;
+
+    color: #c7ff14;
+
+    border: 1px solid #506600;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------- Title ---------- */
+
+.intro-content h1 {
+    color: #c7ff14;
+
+    font-size: clamp(36px, 4vw, 58px);
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Description ---------- */
+
+.intro-content > p {
+    max-width: 600px;
+
+    color: #d1d1d1;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   INTRO META
+========================================================= */
+
+.intro-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+.intro-meta span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #a6a6a6;
+
+    font-size: 14px;
+}
+
+.intro-meta i {
+    color: #c7ff14;
+
+    font-size: 18px;
+}
+
+.intro-meta strong {
+    color: #d1d1d1;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   START BUTTON
+========================================================= */
+
+.start-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    width: fit-content;
+
+    min-width: 190px;
+
+    min-height: 50px;
+
+    padding: 13px 25px;
+
+    background: #c7ff14;
+
+    color: #090909;
+
+    border-radius: 28px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.start-btn:hover {
+    background: #d4ff45;
+
+    color: #090909;
+
+    transform: translateY(-2px);
+}
+
+.start-btn i {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   STEPS SECTION
+========================================================= */
+
+.steps-section {
+    width: calc(100% - 40px);
+
+    max-width: 1360px;
+
+    margin: 0 auto 60px;
+
+    padding: 50px;
+
+    border: 3px solid #383838;
+
+    border-radius: 24px;
+
+    background: #090909;
+}
+
+
+/* ---------- Heading ---------- */
+
+.steps-heading {
+    margin-bottom: 35px;
+}
+
+.steps-heading p {
+    color: #c7ff14;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.steps-heading h2 {
+    color: #ffffff;
+
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STEP CARD
+========================================================= */
+
+.step-card {
+    width: 100%;
+
+    min-height: 120px;
+
+    margin-bottom: 20px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: #141414;
+
+    border: 1px solid #292929;
+
+    border-radius: 20px;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.step-card:last-child {
+    margin-bottom: 0;
+}
+
+.step-card:hover {
+    border-color: #506600;
+
+    transform: translateX(3px);
+}
+
+
+/* ---------- Step Number ---------- */
+
+.step-number {
+    flex-shrink: 0;
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #c7ff14;
+
+    color: #090909;
+
+    border-radius: 50%;
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+
+/* ---------- Step Content ---------- */
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    color: #ffffff;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    color: #a6a6a6;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   COMPLETION SECTION
+========================================================= */
+
+.completion-section {
+    width: calc(100% - 40px);
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    border: 1px solid #292929;
+
+    border-radius: 24px;
+
+    background: #141414;
+}
+
+
+/* ---------- Completion Icon ---------- */
+
+.completion-icon {
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #c7ff14;
+
+    color: #090909;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+
+/* ---------- Completion Heading ---------- */
+
+.completion-section h2 {
+    color: #ffffff;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.completion-section p {
+    max-width: 550px;
+
+    margin: 0 auto 25px;
+
+    color: #a6a6a6;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- Browse Button ---------- */
+
+.browse-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    background: transparent;
+
+    color: #c7ff14;
+
+    border: 1px solid #94b805;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.browse-button:hover {
+    background: #c7ff14;
+
+    color: #090909;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+
+    .tutorial-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image {
+        min-height: 400px;
+
+        max-height: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+
+    #mainNavigation {
+        padding: 15px 0 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+
+    /* ---------- Back ---------- */
+
+    .back-container {
+        margin-top: 20px;
+    }
+
+
+    /* ---------- Intro ---------- */
+
+    .tutorial-intro {
+        width: calc(100% - 20px);
+
+        grid-template-columns: 1fr;
+
+        margin-bottom: 25px;
+
+        border-radius: 20px;
+    }
+
+    .intro-image {
+        min-height: 280px;
+
+        max-height: 350px;
+    }
+
+    .intro-content {
+        padding: 35px 25px;
+    }
+
+    .intro-content h1 {
+        font-size: 36px;
+
+        line-height: 1.1;
+    }
+
+    .intro-content > p {
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+    .intro-meta {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        margin-bottom: 28px;
+    }
+
+    .start-btn {
+        width: 100%;
+    }
+
+
+    /* ---------- Steps ---------- */
+
+    .steps-section {
+        width: calc(100% - 20px);
+
+        padding: 30px 20px;
+
+        border-radius: 20px;
+
+        margin-bottom: 35px;
+    }
+
+    .steps-heading h2 {
+        font-size: 30px;
+    }
+
+    .step-card {
+        align-items: flex-start;
+
+        padding: 20px;
+
+        gap: 18px;
+
+        border-radius: 18px;
+    }
+
+    .step-number {
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 22px;
+    }
+
+    .step-content h3 {
+        font-size: 19px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    /* ---------- Completion ---------- */
+
+    .completion-section {
+        width: calc(100% - 20px);
+
+        padding: 40px 20px;
+    }
+
+    .completion-section h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+
+    .intro-content h1 {
+        font-size: 32px;
+    }
+
+    .intro-image {
+        min-height: 230px;
+    }
+
+
+    .step-card {
+        flex-direction: column;
+    }
+
+    .step-number {
+        width: 48px;
+
+        height: 48px;
+    }
+
+}

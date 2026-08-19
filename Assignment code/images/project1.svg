@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#302060"/>
+  <stop offset="1" stop-color="#6d4bd1"/>
+ </linearGradient>
+</defs>
+<rect width="960" height="540" fill="url(#g)"/>
+
+      <circle cx="735" cy="125" r="75" fill="#ffe36e"/>
+      <path d="M0 400 Q170 275 330 380 T650 340 T960 390 L960 540 L0 540Z" fill="#22245f"/>
+      <path d="M0 445 Q180 335 360 420 T700 395 T960 435 L960 540 L0 540Z" fill="#111331"/>
+      <circle cx="220" cy="120" r="7" fill="#fff"/><circle cx="320" cy="170" r="9" fill="#fff"/>
+      <circle cx="470" cy="100" r="6" fill="#fff"/><circle cx="590" cy="155" r="8" fill="#fff"/>
+    
+<rect x="35" y="425" width="890" height="80" rx="18" fill="#090909" opacity=".82"/>
+<text x="65" y="463" font-family="Arial" font-size="27" font-weight="700" fill="#ffffff">Moonlight Adventure</text>
+<text x="65" y="490" font-family="Arial" font-size="15" fill="#c7ff14">2D Animation</text>
+</svg>

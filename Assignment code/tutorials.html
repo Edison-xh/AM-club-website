@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutorials | AM Club</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Shared website styles -->
+    <link rel="stylesheet" href="css/SharedStyles.css">
+
+    <!-- Tutorials CSS -->
+    <link rel="stylesheet" href="css/Tutorials.css">
+</head>
+
+<body>
+
+<!-- Shared Navigation -->
+    <nav class = "navbar navbar-expand-lg bg-black club-navbar" 
+                data-bs-theme="dark" aria-label="Main navigation">
+        <div class = "container-fluid navigation-container">
+
+            <!-- Logo-->
+            <!-- navbar-brand = Bootstrap class for brand link -->
+            <a class = "navbar-brand club-brand" href="index.html" data-nav="home">
+                <!-- bi bi-play = Bootstrap Icon for Play -->
+                <i class = "bi bi-play"></i>
+
+                <span>
+                    <Strong> AM CLUB</Strong>
+                    <small>Animation & Multimedia Club</small>
+                </span>
+            </a>
+
+            <!-- Mobile button-->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavigation"
+                    aria-controls="mainNavigation"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            
+            <!--Links-->
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-nav="home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html" data-nav="about">
+                            About Us
+                        </a>    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html" data-nav="projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tutorials.html" data-nav="tutorials" aria-current="page">
+                            Tutorials
+                        </a>                        
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-nav="events">
+                            Events
+                        </a>
+                    </li>
+                </ul>        
+                
+                <a class="btn join-button" href="contact.html" data-nav="contact">
+                    Join Us
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="tutorials-page">
+
+
+        <!-- ==================================================
+             HERO
+        =================================================== -->
+
+        <section class="tutorial-hero">
+
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    LEARN & CREATE
+                </p>
+
+                <h1>
+                    Animation Tutorials
+                </h1>
+
+                <p class="hero-description">
+                    Learn new animation and multimedia skills through
+                    simple tutorials created for students and beginners.
+                </p>
+
+            </div>
+
+
+            <!-- Search / Filters -->
+            <div class="tutorial-filters">
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <i class="bi bi-search"></i>
+
+                    <input type="text"
+                           id="searchInput"
+                           placeholder="Search tutorials..."
+                           aria-label="Search tutorials">
+
+                </div>
+
+
+                <!-- Topic -->
+                <select id="topicFilter"
+                        class="tutorial-select"
+                        aria-label="Filter by topic">
+
+                    <option value="all">
+                        Topic: All topics
+                    </option>
+
+                    <option value="animation">
+                        Animation
+                    </option>
+
+                    <option value="3d modelling">
+                        3D Modelling
+                    </option>
+
+                    <option value="video editing">
+                        Video Editing
+                    </option>
+
+                    <option value="graphic design">
+                        Graphic Design
+                    </option>
+
+                    <option value="motion graphics">
+                        Motion Graphics
+                    </option>
+
+                    <option value="storytelling">
+                        Storytelling
+                    </option>
+
+                </select>
+
+
+                <!-- Level -->
+                <select id="levelFilter"
+                        class="tutorial-select"
+                        aria-label="Filter by level">
+
+                    <option value="all">
+                        Level: All levels
+                    </option>
+
+                    <option value="beginner">
+                        Beginner
+                    </option>
+
+                    <option value="intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="advanced">
+                        Advanced
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             TUTORIAL SECTION
+        =================================================== -->
+
+        <section class="tutorial-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        OUR RESOURCES
+                    </p>
+
+                    <h2>
+                        Explore Tutorials
+                    </h2>
+
+                </div>
+
+
+                <div class="section-right">
+
+                    <p class="tutorial-count"
+                       id="tutorialCount">
+                        6 Tutorials
+                    </p>
+
+                    <button id="showAllBtn"
+                            class="show-all-btn"
+                            type="button">
+                        Show All
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 TUTORIAL GRID
+            =================================================== -->
+
+            <div class="tutorial-grid"
+                 id="tutorialGrid">
+
+
+                <!-- ================= CARD 1 ================= -->
+
+                <article class="tutorial-card"
+                         data-topic="animation"
+                         data-level="beginner">
+
+                    <div class="tutorial-image create-image">
+
+                        <img src="images/Create.jpg"
+                             alt="Creating your first animation">
+
+                        <span>
+                            CREATE
+                        </span>
+
+                    </div>
+
+
+                    <div class="tutorial-content">
+
+                        <span class="tutorial-tag">
+                            Animation
+                        </span>
+
+                        <h3>
+                            Creating Your First Animation
+                        </h3>
+
+                        <p>
+                            Learn the basic principles of animation
+                            and create your first simple animation.
+                        </p>
+
+
+                        <div class="tutorial-meta">
+
+                            <span>
+                                <i class="bi bi-bar-chart"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                15 min
+                            </span>
+
+                        </div>
+
+
+                        <!-- CORRECTED LINK -->
+                        <a href="tutorial-details.html?tutorial=animation"
+                           class="tutorial-button">
+
+                            View Details
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= CARD 2 ================= -->
+
+                <article class="tutorial-card"
+                         data-topic="3d modelling"
+                         data-level="beginner">
+
+                    <div class="tutorial-image learn-image">
+
+                        <img src="images/Learn.jpg"
+                             alt="Introduction to 3D modelling">
+
+                        <span>
+                            LEARN
+                        </span>
+
+                    </div>
+
+
+                    <div class="tutorial-content">
+
+                        <span class="tutorial-tag">
+                            3D Modelling
+                        </span>
+
+                        <h3>
+                            Introduction to 3D Modelling
+                        </h3>
+
+                        <p>
+                            Understand the fundamentals of creating
+                            simple 3D objects and scenes.
+                        </p>
+
+
+                        <div class="tutorial-meta">
+
+                            <span>
+                                <i class="bi bi-bar-chart"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                20 min
+                            </span>
+
+                        </div>
+
+
+                        <!-- CORRECTED LINK -->
+                        <a href="tutorial-details.html?tutorial=3d"
+                           class="tutorial-button">
+
+                            View Details
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= CARD 3 ================= -->
+
+                <article class="tutorial-card"
+                         data-topic="video editing"
+                         data-level="beginner">
+
+                    <div class="tutorial-image Video-image">
+
+                        <img src="images/Video.jpg"
+                             alt="Basic video editing">
+
+                        <span>
+                            VIDEO
+                        </span>
+
+                    </div>
+
+
+                    <div class="tutorial-content">
+
+                        <span class="tutorial-tag">
+                            Video Editing
+                        </span>
+
+                        <h3>
+                            Basic Video Editing
+                        </h3>
+
+                        <p>
+                            Learn how to organise clips, add transitions
+                            and create a simple video project.
+                        </p>
+
+
+                        <div class="tutorial-meta">
+
+                            <span>
+                                <i class="bi bi-bar-chart"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                18 min
+                            </span>
+
+                        </div>
+
+
+                        <!-- CORRECTED LINK -->
+                        <a href="tutorial-details.html?tutorial=video"
+                           class="tutorial-button">
+
+                            View Details
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= CARD 4 ================= -->
+
+                <article class="tutorial-card"
+                         data-topic="graphic design"
+                         data-level="beginner">
+
+                    <div class="tutorial-image design-image">
+
+                        <img src="images/Design.jpg"
+                             alt="Graphic design fundamentals">
+
+                        <span>
+                            DESIGN
+                        </span>
+
+                    </div>
+
+
+                    <div class="tutorial-content">
+
+                        <span class="tutorial-tag">
+                            Graphic Design
+                        </span>
+
+                        <h3>
+                            Graphic Design Fundamentals
+                        </h3>
+
+                        <p>
+                            Explore basic layout, typography and
+                            visual design principles.
+                        </p>
+
+
+                        <div class="tutorial-meta">
+
+                            <span>
+                                <i class="bi bi-bar-chart"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                25 min
+                            </span>
+
+                        </div>
+
+
+                        <!-- CORRECTED LINK -->
+                        <a href="tutorial-details.html?tutorial=design"
+                           class="tutorial-button">
+
+                            View Details
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= CARD 5 ================= -->
+
+                <article class="tutorial-card"
+                         data-topic="motion graphics"
+                         data-level="intermediate">
+
+                    <div class="tutorial-image motion-image">
+
+                        <img src="images/Motion.jpg"
+                             alt="Introduction to motion graphics">
+
+                        <span>
+                            MOTION
+                        </span>
+
+                    </div>
+
+
+                    <div class="tutorial-content">
+
+                        <span class="tutorial-tag">
+                            Motion Graphics
+                        </span>
+
+                        <h3>
+                            Introduction to Motion Graphics
+                        </h3>
+
+                        <p>
+                            Learn how movement and visual effects
+                            can improve multimedia projects.
+                        </p>
+
+
+                        <div class="tutorial-meta">
+
+                            <span>
+                                <i class="bi bi-bar-chart"></i>
+                                Intermediate
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                30 min
+                            </span>
+
+                        </div>
+
+
+                        <!-- CORRECTED LINK -->
+                        <a href="tutorial-details.html?tutorial=motion"
+                           class="tutorial-button">
+
+                            View Details
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= CARD 6 ================= -->
+
+                <article class="tutorial-card"
+                         data-topic="storytelling"
+                         data-level="intermediate">
+
+                    <div class="tutorial-image story-image">
+
+                        <img src="images/Story.jpg"
+                             alt="Visual storytelling basics">
+
+                        <span>
+                            STORY
+                        </span>
+
+                    </div>
+
+
+                    <div class="tutorial-content">
+
+                        <span class="tutorial-tag">
+                            Storytelling
+                        </span>
+
+                        <h3>
+                            Visual Storytelling Basics
+                        </h3>
+
+                        <p>
+                            Discover how composition and timing can
+                            help communicate a strong visual story.
+                        </p>
+
+
+                        <div class="tutorial-meta">
+
+                            <span>
+                                <i class="bi bi-bar-chart"></i>
+                                Intermediate
+                            </span>
+
+                            <span>
+                                <i class="bi bi-clock"></i>
+                                22 min
+                            </span>
+
+                        </div>
+
+
+                        <!-- CORRECTED LINK -->
+                        <a href="tutorial-details.html?tutorial=storytelling"
+                           class="tutorial-button">
+
+                            View Details
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- No Results -->
+
+            <div id="noResults"
+                 class="no-results">
+
+                <i class="bi bi-search"></i>
+
+                <h3>
+                    No tutorials found
+                </h3>
+
+                <p>
+                    Try changing your search or filters.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+     SHARED FOOTER
+================================================== -->
+
+<footer class="site-footer">
+        <div class="container-fluid footer-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <i class="bi bi-play" aria-hidden="true"></i>
+
+                        <span>
+                            <strong>AM CLUB</strong>
+                            <small>Animation &amp; Multimedia Club</small>
+                        </span>
+                    </a>
+
+                    <p>
+                        Creating, learning and sharing ideas through animation
+                        and multimedia.
+                    </p>
+                </div>
+
+                <nav class="footer-group" aria-label="Footer quick links">
+                    <h2>Quick Links</h2>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact / Join Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-group">
+                    <h2>Connect</h2>
+
+                    <ul>
+                        <li>
+                            <a href="#" aria-label="Instagram demonstration link">
+                                <i class="bi bi-instagram" aria-hidden="true"></i>
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="YouTube demonstration link">
+                                <i class="bi bi-youtube" aria-hidden="true"></i>
+                                YouTube
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Facebook demonstration link">
+                                <i class="bi bi-facebook" aria-hidden="true"></i>
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-group footer-contact">
+                    <h2>Contact</h2>
+
+                    <ul>
+                        <li>
+                            <a href="mailto:amclub@example.com">
+                                <i class="bi bi-envelope" aria-hidden="true"></i>
+                                amclub@example.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+60123456789">
+                                <i class="bi bi-telephone" aria-hidden="true"></i>
+                                +60 12-345 6789
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                            UTAR Kampar
+                        </li>
+                    </ul>
+
+                    <small>Demo contact for assignment</small>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <small>&copy; 2026 Animation &amp; Multimedia Club</small>
+                <small>Create. Learn. Collaborate.</small>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- ==================================================
+         SEARCH / FILTER JAVASCRIPT
+    =================================================== -->
+
+    <script>
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const topicFilter =
+            document.getElementById("topicFilter");
+
+        const levelFilter =
+            document.getElementById("levelFilter");
+
+        const showAllBtn =
+            document.getElementById("showAllBtn");
+
+        const tutorialCards =
+            document.querySelectorAll(".tutorial-card");
+
+        const tutorialCount =
+            document.getElementById("tutorialCount");
+
+        const noResults =
+            document.getElementById("noResults");
+
+
+        function filterTutorials() {
+
+            const searchValue =
+                searchInput.value.toLowerCase().trim();
+
+            const selectedTopic =
+                topicFilter.value.toLowerCase();
+
+            const selectedLevel =
+                levelFilter.value.toLowerCase();
+
+            let visibleCount = 0;
+
+
+            tutorialCards.forEach(card => {
+
+                const title =
+                    card.querySelector("h3")
+                        .textContent
+                        .toLowerCase();
+
+                const description =
+                    card.querySelector("p")
+                        .textContent
+                        .toLowerCase();
+
+                const topic =
+                    card.dataset.topic.toLowerCase();
+
+                const level =
+                    card.dataset.level.toLowerCase();
+
+
+                const matchesSearch =
+                    title.includes(searchValue) ||
+                    description.includes(searchValue) ||
+                    topic.includes(searchValue);
+
+
+                const matchesTopic =
+                    selectedTopic === "all" ||
+                    topic === selectedTopic;
+
+
+                const matchesLevel =
+                    selectedLevel === "all" ||
+                    level === selectedLevel;
+
+
+                if (
+                    matchesSearch &&
+                    matchesTopic &&
+                    matchesLevel
+                ) {
+
+                    card.style.display = "flex";
+                    visibleCount++;
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+
+            tutorialCount.textContent =
+                visibleCount +
+                (visibleCount === 1
+                    ? " Tutorial"
+                    : " Tutorials");
+
+
+            if (visibleCount === 0) {
+
+                noResults.classList.add("show");
+
+            } else {
+
+                noResults.classList.remove("show");
+
+            }
+
+        }
+
+
+        function showAllTutorials() {
+
+            searchInput.value = "";
+            topicFilter.value = "all";
+            levelFilter.value = "all";
+
+            filterTutorials();
+
+        }
+
+
+        searchInput.addEventListener(
+            "input",
+            filterTutorials
+        );
+
+
+        topicFilter.addEventListener(
+            "change",
+            filterTutorials
+        );
+
+
+        levelFilter.addEventListener(
+            "change",
+            filterTutorials
+        );
+
+
+        showAllBtn.addEventListener(
+            "click",
+            showAllTutorials
+        );
+
+
+        filterTutorials();
+
+    </script>
+
+</body>
+
+</html>

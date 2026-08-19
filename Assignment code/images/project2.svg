@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#12355b"/>
+  <stop offset="1" stop-color="#4f46a5"/>
+ </linearGradient>
+</defs>
+<rect width="960" height="540" fill="url(#g)"/>
+
+      <circle cx="480" cy="245" r="145" fill="#d8e1eb" opacity=".95"/>
+      <rect x="395" y="155" width="170" height="150" rx="32" fill="#5d6977"/>
+      <circle cx="445" cy="220" r="16" fill="#c7ff14"/><circle cx="515" cy="220" r="16" fill="#c7ff14"/>
+      <rect x="440" y="265" width="80" height="12" rx="6" fill="#20252c"/>
+      <rect x="370" y="315" width="220" height="75" rx="20" fill="#414c59"/>
+      <path d="M300 125 L365 190 M660 125 L595 190" stroke="#c7ff14" stroke-width="17" stroke-linecap="round"/>
+    
+<rect x="35" y="425" width="890" height="80" rx="18" fill="#090909" opacity=".82"/>
+<text x="65" y="463" font-family="Arial" font-size="27" font-weight="700" fill="#ffffff">Robot Workshop</text>
+<text x="65" y="490" font-family="Arial" font-size="15" fill="#c7ff14">3D Animation</text>
+</svg>

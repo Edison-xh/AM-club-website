@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Animation &amp; Multimedia Club</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/SharedStyles.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+
+<body data-page="events">
+    
+    <nav class="navbar navbar-expand-lg bg-black club-navbar" data-bs-theme="dark" aria-label="Main navigation">
+        <div class="container-fluid navigation-container">
+            <a class="navbar-brand club-brand" href="index.html" data-nav="home">
+                <i class="bi bi-play" aria-hidden="true"></i>
+                <span>
+                    <strong>AM CLUB</strong>
+                    <small>Animation &amp; Multimedia Club</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation" aria-label="Open navigation menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-nav="home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html" data-nav="about">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html" data-nav="projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html" data-nav="tutorials">Tutorials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                        href="events.html"
+                        data-nav="events"
+                        aria-current="page">
+                            Events
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="btn join-button" href="contact.html" data-nav="contact">
+                    Join Us <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="page-container events-page">
+        <section class="event-highlight section-block" aria-labelledby="upcoming-event-title">
+            <div class="event-highlight-content">
+                <h1 class="event-highlight-title" id="upcoming-event-title">
+                    Upcoming Event
+                </h1>
+
+                <div class="event-highlight-details-row" id="featured-event-details">
+                    <p class="event-loading-message">Loading event details...</p>
+                </div>
+
+                <div class="event-highlight-actions">
+                    <button class="event-highlight-details-button" type="button" data-event-details="featured-event">
+                        View Details <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                    </button>
+                    <button class="event-highlight-register-button" id="featured-event-register-link" type="button" data-event-register>
+                        Register Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="upcoming-events-section" aria-labelledby="upcoming-events-title">
+            <div class="events-section-heading">
+                <div>
+                    <p class="section-label">What’s happening</p>
+                    <h2 class="events-section-title" id="upcoming-events-title">Upcoming Events</h2>
+                </div>
+                <p class="event-total-text" id="event-results-count" aria-live="polite"></p>
+            </div>
+
+            <div class="events-toolbar" aria-label="Filter upcoming events">
+                <div class="events-search-wrapper">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <label class="visually-hidden" for="event-search">Search events</label>
+                    <input class="events-search-input" id="event-search" type="search" placeholder="Search events..." autocomplete="off">
+                </div>
+                <div class="event-filter-list" id="event-filter-list" role="group" aria-label="Event categories"></div>
+            </div>
+
+            <div class="event-card-grid" id="upcoming-events-list">
+                <p class="event-loading-message">Loading upcoming events...</p>
+            </div>
+            <div class="view-all-events-container" id="view-all-events-container" hidden>
+                <a href="event-archive.html" class="view-all-events-button">
+                    View All Events
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="past-events-section" aria-labelledby="past-events-title">
+            <h2 class="events-section-title" id="past-events-title">Past Event Gallery</h2>
+            <div class="past-event-gallery-grid" id="past-events-list">
+                <p class="event-loading-message">Loading past events...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-fluid footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <i class="bi bi-play" aria-hidden="true"></i>
+                        <span>
+                            <strong>AM CLUB</strong>
+                            <small>Animation &amp; Multimedia Club</small>
+                        </span>
+                    </a>
+                    <p>Creating, learning and sharing ideas through animation and multimedia.</p>
+                </div>
+
+                <nav class="footer-group" aria-label="Footer quick links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact / Join Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-group">
+                    <h2>Connect</h2>
+                    <ul>
+                        <li><a href="#" aria-label="Instagram demonstration link"><i class="bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a href="#" aria-label="YouTube demonstration link"><i class="bi bi-youtube" aria-hidden="true"></i>YouTube</a></li>
+                        <li><a href="#" aria-label="Facebook demonstration link"><i class="bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-group footer-contact">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a href="mailto:amclub@example.com"><i class="bi bi-envelope" aria-hidden="true"></i>amclub@example.com</a></li>
+                        <li><a href="tel:+60123456789"><i class="bi bi-telephone" aria-hidden="true"></i>+60 12-345 6789</a></li>
+                        <li><i class="bi bi-geo-alt" aria-hidden="true"></i>UTAR Kampar</li>
+                    </ul>
+                    <small>Demo contact for assignment</small>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <small>&copy; 2026 Animation &amp; Multimedia Club</small>
+                <small>Create. Learn. Collaborate.</small>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="event-details-modal" tabindex="-1" aria-labelledby="event-details-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content event-details-dialog">
+                <div class="modal-header">
+                    <div>
+                        <p class="section-label mb-2">Event details</p>
+                        <h2 class="modal-title" id="event-details-title">Event title</h2>
+                    </div>
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="event-details-modal-layout">
+                        <img class="event-details-modal-image" id="event-details-image" alt="">
+                        <div>
+                            <p class="event-details-modal-description" id="event-details-description"></p>
+                            <div class="event-details-modal-meta" id="event-details-meta"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="event-modal-register-button" id="event-details-register-link" type="button" data-event-register>Register Now <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="event-registration-modal" tabindex="-1" aria-labelledby="event-registration-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content event-registration-dialog">
+                <form id="event-registration-form" novalidate>
+                    <div class="modal-header">
+                        <div>
+                            <p class="section-label mb-2">Event registration</p>
+                            <h2 class="modal-title" id="event-registration-title">Register for an event</h2>
+                        </div>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="event-registration-event-name" id="event-registration-event-name"></p>
+                        <input id="event-registration-id" name="eventId" type="hidden">
+                        <div class="event-registration-field">
+                            <label for="event-registration-name">Full name</label>
+                            <input class="event-registration-input" id="event-registration-name" name="name" type="text" autocomplete="name" minlength="2" required>
+                        </div>
+                        <div class="event-registration-field">
+                            <label for="event-registration-email">Email address</label>
+                            <input class="event-registration-input" id="event-registration-email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <p class="event-registration-message" id="event-registration-message" role="status" aria-live="polite"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="event-modal-register-button" type="submit">Complete Registration <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="event-registration-success-modal" tabindex="-1" aria-labelledby="event-registration-success-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content event-registration-dialog">
+                <div class="modal-body event-registration-success-content">
+                    <div class="event-registration-success-icon" aria-hidden="true"><i class="bi bi-check-lg"></i></div>
+                    <h2 class="modal-title" id="event-registration-success-title">You’re registered!</h2>
+                    <button class="event-modal-register-button" type="button" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div class="toast event-registration-toast" id="event-registration-toast" role="status" aria-live="polite" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                <strong class="me-auto">Registration</strong>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="event-registration-toast-message"></div>
+        </div>
+    </div>
+
+
+    <script src="js/event-data.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>

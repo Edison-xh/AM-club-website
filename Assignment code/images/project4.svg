@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#24103f"/>
+  <stop offset="1" stop-color="#581c5c"/>
+ </linearGradient>
+</defs>
+<rect width="960" height="540" fill="url(#g)"/>
+
+      <rect x="90" y="70" width="780" height="340" rx="16" fill="#111226" opacity=".8"/>
+      <rect x="130" y="150" width="90" height="235" fill="#6c4df6"/>
+      <rect x="240" y="105" width="115" height="280" fill="#17bebb"/>
+      <rect x="375" y="180" width="100" height="205" fill="#8b5cf6"/>
+      <rect x="495" y="125" width="135" height="260" fill="#ec4899"/>
+      <rect x="650" y="170" width="100" height="215" fill="#22d3ee"/>
+      <path d="M95 390 L865 390" stroke="#c7ff14" stroke-width="7"/>
+      <path d="M150 220 L205 220 M260 175 L335 175 M525 195 L610 195 M675 235 L730 235" stroke="#fff" stroke-width="8"/>
+    
+<rect x="35" y="425" width="890" height="80" rx="18" fill="#090909" opacity=".82"/>
+<text x="65" y="463" font-family="Arial" font-size="27" font-weight="700" fill="#ffffff">Neon City</text>
+<text x="65" y="490" font-family="Arial" font-size="15" fill="#c7ff14">Digital Art</text>
+</svg>

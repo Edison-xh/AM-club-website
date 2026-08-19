@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#4cc9f0"/>
+  <stop offset="1" stop-color="#2563eb"/>
+ </linearGradient>
+</defs>
+<rect width="960" height="540" fill="url(#g)"/>
+
+      <path d="M0 290 Q180 215 340 290 T660 280 T960 275 L960 540 L0 540Z" fill="#0ea5e9"/>
+      <path d="M0 355 Q180 295 350 345 T680 335 T960 330 L960 540 L0 540Z" fill="#075985"/>
+      <ellipse cx="350" cy="285" rx="95" ry="50" fill="#ffd34e"/>
+      <polygon points="260,285 195,240 195,330" fill="#ffd34e"/>
+      <circle cx="395" cy="270" r="8" fill="#1f2937"/>
+      <ellipse cx="650" cy="355" rx="80" ry="42" fill="#c7ff14"/>
+      <polygon points="575,355 520,320 520,390" fill="#c7ff14"/>
+      <circle cx="684" cy="340" r="7" fill="#1f2937"/>
+    
+<rect x="35" y="425" width="890" height="80" rx="18" fill="#090909" opacity=".82"/>
+<text x="65" y="463" font-family="Arial" font-size="27" font-weight="700" fill="#ffffff">Ocean Friends</text>
+<text x="65" y="490" font-family="Arial" font-size="15" fill="#c7ff14">2D Animation</text>
+</svg>

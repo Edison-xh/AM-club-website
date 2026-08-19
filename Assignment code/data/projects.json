@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Moonlight Adventure",
+    "category": "2D Animation",
+    "creator": "Alicia Tan",
+    "year": "2026",
+    "software": "Adobe Animate / After Effects",
+    "credits": "Alicia Tan, Mei Lin",
+    "image": "images/project1.svg",
+    "description": "A colourful 2D short animation about a young explorer travelling through a magical night world.",
+    "process": "The production started with storyboarding and character sketches. The artwork was then prepared digitally before frame-by-frame animation, background movement, sound effects and final colour adjustments were added."
+  },
+  {
+    "id": 2,
+    "title": "Robot Workshop",
+    "category": "3D Animation",
+    "creator": "Jason Lee",
+    "year": "2026",
+    "software": "Blender",
+    "credits": "Jason Lee, Darren Lim",
+    "image": "images/project2.svg",
+    "description": "A 3D modelling and animation project showing a futuristic robot workshop.",
+    "process": "The robot was modelled from basic shapes before materials and lighting were added. Keyframe animation was then used to create mechanical movement."
+  },
+  {
+    "id": 3,
+    "title": "Campus Stories",
+    "category": "Video Editing",
+    "creator": "Nur Aina",
+    "year": "2026",
+    "software": "Adobe Premiere Pro / After Effects",
+    "credits": "Media Production Team",
+    "image": "images/project3.svg",
+    "description": "A cinematic campus montage using transitions, titles, sound and colour grading.",
+    "process": "Video clips were selected and arranged in Premiere Pro. The team then added animated titles, transitions, background music and colour correction."
+  },
+  {
+    "id": 4,
+    "title": "Neon City",
+    "category": "Digital Art",
+    "creator": "Chloe Wong",
+    "year": "2026",
+    "software": "Adobe Photoshop / Illustrator",
+    "credits": "Chloe Wong",
+    "image": "images/project4.svg",
+    "description": "A cyberpunk-inspired digital artwork focusing on perspective and dramatic lighting.",
+    "process": "The composition was sketched with perspective guides. Buildings and signs were created in layers before glow and atmospheric effects were added."
+  },
+  {
+    "id": 5,
+    "title": "Ocean Friends",
+    "category": "2D Animation",
+    "creator": "Daniel Ong",
+    "year": "2026",
+    "software": "Adobe Animate",
+    "credits": "Daniel Ong, Sarah Lim",
+    "image": "images/project5.svg",
+    "description": "A friendly educational 2D animation featuring sea animals and simple motion graphics.",
+    "process": "Characters were designed using simple shapes and colours. Motion paths, reusable symbols and sound effects were added to create a cheerful learning experience."
+  },
+  {
+    "id": 6,
+    "title": "Mini Space Station",
+    "category": "3D Animation",
+    "creator": "Ethan Goh",
+    "year": "2026",
+    "software": "Blender",
+    "credits": "Ethan Goh",
+    "image": "images/project6.svg",
+    "description": "A stylised low-poly 3D environment featuring a small space station.",
+    "process": "The space station was modelled using low-poly techniques. Materials and lighting were added before an animated camera path was created."
+  }
+]

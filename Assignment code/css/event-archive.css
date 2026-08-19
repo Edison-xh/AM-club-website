@@ -1,0 +1,129 @@
+.event-archive-page {
+    padding-top: 48px;
+    padding-bottom: 56px;
+}
+
+.event-archive-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    color: var(--muted-text);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+.event-archive-back-link:hover,
+.event-archive-back-link:focus-visible {
+    color: var(--brand-lime);
+}
+
+.event-archive-header {
+    margin-bottom: 32px;
+    padding: 30px 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: linear-gradient(120deg, rgba(199, 255, 20, .08), transparent 45%);
+}
+
+.event-archive-title {
+    color: var(--brand-lime);
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1;
+}
+
+.event-archive-introduction {
+    max-width: 580px;
+    margin-top: 12px;
+    color: var(--muted-text);
+    font-size: 14px;
+}
+
+.event-archive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.event-archive-toolbar {
+    margin: 0 0 22px;
+}
+
+.event-archive-grid .event-card {
+    min-height: 390px;
+}
+
+.event-archive-grid .event-card-image-wrapper {
+    height: 180px;
+}
+
+.event-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 36px;
+}
+
+.event-pagination-button {
+    display: inline-grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+    background: #121212;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+}
+
+.event-pagination-button:hover:not(:disabled),
+.event-pagination-button:focus-visible {
+    border-color: var(--brand-lime);
+    color: var(--brand-lime);
+}
+
+.event-pagination-button.is-current {
+    border-color: var(--brand-lime);
+    background: var(--brand-lime);
+    color: #090909;
+}
+
+.event-pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: .35;
+}
+
+.event-pagination-ellipsis {
+    width: 20px;
+    color: var(--muted-text);
+    text-align: center;
+}
+
+@media (max-width:980px) {
+    .event-archive-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width:700px) {
+    .event-archive-page {
+        padding-top: 28px;
+    }
+
+    .event-archive-header {
+        padding: 24px 20px;
+    }
+
+    .event-archive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-archive-grid .event-card-image-wrapper {
+        height: 190px;
+    }
+}

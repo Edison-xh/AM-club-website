@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Animation & Multimedia Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/SharedStyles.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-black club-navbar" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container-fluid navigation-container">
+      <a class="navbar-brand club-brand" href="index.html" data-nav="home">
+        <i class="bi bi-play" aria-hidden="true"></i>
+        <span>
+          <strong>AM CLUB</strong>
+          <small>Animation &amp; Multimedia Club</small>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNavigation" aria-controls="mainNavigation"
+              aria-expanded="false" aria-label="Open navigation menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-nav="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutUs.html" data-nav="about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Projects.html" data-nav="projects" aria-current="page">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="tutorials.html" data-nav="tutorials">Tutorials</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html" data-nav="events">Events</a></li>
+        </ul>
+
+        <a class="btn join-button" href="contact.html" data-nav="contact">
+          Join Us
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="Projects.html"><i class="bi bi-arrow-left"></i> Projects / Project Details</a>
+
+    <header class="details-header">
+      <h1 id="projectTitle" class="page-title">Project Title</h1>
+      <p id="projectMeta" class="page-subtitle">Category • Creator • Year</p>
+    </header>
+
+    <section class="details-top">
+      <div class="main-media">
+        <img id="projectImage" alt="">
+      </div>
+
+      <aside class="info-panel">
+        <p class="section-label">Project details</p>
+        <h2>Project information</h2>
+        <dl class="info-list">
+          <div><dt>Creator</dt><dd id="projectCreator"></dd></div>
+          <div><dt>Software</dt><dd id="projectSoftware"></dd></div>
+          <div><dt>Category</dt><dd id="projectCategory"></dd></div>
+          <div><dt>Credits</dt><dd id="projectCredits"></dd></div>
+        </dl>
+
+        <div class="actions">
+          <button id="saveProject" class="primary-btn"><i class="bi bi-bookmark"></i> Save project</button>
+          <button id="visitCreator" class="secondary-btn">Visit creator</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="details-bottom">
+      <article class="description-section">
+        <h2>Description and production process</h2>
+        <div class="description-card">
+          <p id="projectDescription"></p>
+          <p id="projectProcess"></p>
+        </div>
+      </article>
+
+      <aside class="related-section">
+        <h2>Related projects</h2>
+        <div id="relatedList" class="related-list"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-fluid footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html">
+            <i class="bi bi-play" aria-hidden="true"></i>
+            <span>
+              <strong>AM CLUB</strong>
+              <small>Animation &amp; Multimedia Club</small>
+            </span>
+          </a>
+          <p>Creating, learning and sharing ideas through animation and multimedia.</p>
+        </div>
+
+        <nav class="footer-group" aria-label="Footer quick links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact / Join Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-group">
+          <h2>Connect</h2>
+          <ul>
+            <li><a href="#" aria-label="Instagram demonstration link"><i class="bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
+            <li><a href="#" aria-label="YouTube demonstration link"><i class="bi bi-youtube" aria-hidden="true"></i>YouTube</a></li>
+            <li><a href="#" aria-label="Facebook demonstration link"><i class="bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group footer-contact">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:amclub@example.com"><i class="bi bi-envelope" aria-hidden="true"></i>amclub@example.com</a></li>
+            <li><a href="tel:+60123456789"><i class="bi bi-telephone" aria-hidden="true"></i>+60 12-345 6789</a></li>
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i>UTAR Kampar</li>
+          </ul>
+          <small>Demo contact for assignment</small>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small>&copy; 2026 Animation &amp; Multimedia Club</small>
+        <small>Create. Learn. Collaborate.</small>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toastBox" class="toast-box"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/details.js"></script>
+</body>
+</html>

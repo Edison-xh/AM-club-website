@@ -1,0 +1,767 @@
+/* =========================
+   About Page Foundation
+========================= */
+
+.about-page {
+    min-width: 320px;
+
+    background-color: var(--color-page);
+    color: var(--color-text);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-page main {
+    overflow: hidden;
+}
+
+.about-page-container {
+    width: 100%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding-right: var(--page-gutter);
+    padding-left: var(--page-gutter);
+}
+
+.about-page main h1,
+.about-page main h2,
+.about-page main h3,
+.about-page main p {
+    margin-top: 0;
+}
+
+.about-page main h2 {
+    color: var(--color-text);
+
+    font-size: clamp(2rem, 4vw, 4.3rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.98;
+}
+
+.section-kicker {
+    margin-bottom: 14px;
+
+    color: var(--color-accent);
+
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   About Hero
+========================= */
+
+.about-page-hero {
+    padding: 20px 0 0;
+}
+
+.about-hero-box {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+
+    min-height: clamp(250px, 31vw, 390px);
+    padding: clamp(44px, 7vw, 92px) 24px;
+
+    border: 2px solid #303030;
+    border-radius: 22px;
+
+    background:
+        radial-gradient(circle at 72% 35%, rgb(199 255 0 / 9%), transparent 25%),
+        linear-gradient(135deg, #090909, #060606);
+
+    text-align: center;
+}
+
+.about-hero-box::before,
+.about-hero-box::after {
+    position: absolute;
+    z-index: -1;
+
+    border: 1px solid rgb(199 255 0 / 18%);
+    border-radius: 50%;
+
+    content: "";
+}
+
+.about-hero-box::before {
+    top: -105px;
+    right: -35px;
+
+    width: 280px;
+    height: 280px;
+}
+
+.about-hero-box::after {
+    bottom: -150px;
+    left: 7%;
+
+    width: 300px;
+    height: 300px;
+}
+
+.about-hero-box h1 {
+    margin-bottom: 24px;
+
+    color: var(--color-accent);
+
+    font-size: clamp(3rem, 6.3vw, 5.5rem);
+    font-weight: 850;
+    letter-spacing: -0.055em;
+    line-height: 0.95;
+}
+
+.about-hero-topics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+
+    margin-bottom: 0;
+
+    color: #d9d9d9;
+
+    font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+    font-weight: 700;
+}
+
+.about-hero-topics span {
+    position: relative;
+}
+
+.about-hero-topics span:not(:last-child)::after {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-accent);
+
+    content: "";
+    transform: translateY(-50%);
+}
+
+
+/* =========================
+   Club Background
+========================= */
+
+.club-background-section {
+    padding: clamp(90px, 11vw, 160px) 0 clamp(70px, 9vw, 125px);
+}
+
+.background-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(460px, 1.1fr);
+    align-items: center;
+    gap: clamp(50px, 8vw, 130px);
+}
+
+.background-copy {
+    max-width: 630px;
+}
+
+.background-copy h2 {
+    margin-bottom: 32px;
+
+    color: var(--color-accent);
+}
+
+.background-copy > p:not(.section-kicker) {
+    max-width: 590px;
+    margin-bottom: 20px;
+
+    color: var(--color-muted);
+
+    font-size: clamp(1rem, 1.35vw, 1.2rem);
+    line-height: 1.75;
+}
+
+.background-copy > p:last-child {
+    margin-bottom: 0;
+}
+
+.background-art {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    min-height: clamp(390px, 41vw, 590px);
+
+    border: 1px solid #222222;
+    border-radius: var(--card-radius);
+
+    background:
+        radial-gradient(circle at 77% 25%, rgb(199 255 0 / 18%), transparent 20%),
+        radial-gradient(circle at 26% 75%, rgb(255 82 138 / 12%), transparent 26%),
+        #090909;
+}
+
+.background-art::before {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(115deg, transparent 45%, rgb(255 255 255 / 4%));
+
+    content: "";
+}
+
+.art-grid {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.45;
+    background-image:
+        linear-gradient(rgb(255 255 255 / 5%) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(255 255 255 / 5%) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom left, #000000, transparent 78%);
+}
+
+.art-ring {
+    position: absolute;
+
+    border: 3px solid var(--color-accent);
+    border-radius: 50%;
+}
+
+.art-ring-large {
+    top: 17%;
+    right: 13%;
+
+    width: clamp(145px, 17vw, 245px);
+    aspect-ratio: 1;
+
+    box-shadow: 0 0 55px rgb(199 255 0 / 12%);
+}
+
+.art-ring-small {
+    right: 41%;
+    bottom: 15%;
+
+    width: clamp(74px, 8vw, 120px);
+    aspect-ratio: 1;
+
+    border-color: #f4f4f4;
+}
+
+.art-panel {
+    position: absolute;
+
+    display: block;
+
+    border: 1px solid rgb(255 255 255 / 16%);
+    border-radius: 18px;
+
+    background-color: #1b1b1b;
+}
+
+.art-panel-one {
+    top: 25%;
+    left: 13%;
+
+    width: clamp(150px, 18vw, 260px);
+    height: clamp(80px, 9vw, 135px);
+
+    transform: rotate(-7deg);
+}
+
+.art-panel-two {
+    right: 12%;
+    bottom: 13%;
+
+    width: clamp(170px, 19vw, 280px);
+    height: clamp(85px, 9vw, 130px);
+
+    background-color: var(--color-accent);
+
+    transform: rotate(-11deg);
+}
+
+.art-signal {
+    position: absolute;
+    bottom: 24%;
+    left: 19%;
+
+    width: clamp(95px, 10vw, 150px);
+    aspect-ratio: 1;
+
+    border: 2px solid rgb(255 255 255 / 65%);
+    border-radius: 24px;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================
+   Mission and Objectives
+========================= */
+
+.mission-section {
+    padding: clamp(70px, 8vw, 115px) 0 clamp(90px, 10vw, 145px);
+}
+
+.mission-section h2,
+.committee-section h2 {
+    margin-bottom: clamp(32px, 4vw, 55px);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr) minmax(0, 1fr);
+    align-items: stretch;
+    gap: clamp(18px, 2.2vw, 34px);
+}
+
+.mission-card {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: clamp(380px, 35vw, 510px);
+    padding: clamp(24px, 3vw, 42px);
+
+    border: 1px solid #242424;
+    border-radius: var(--card-radius);
+
+    background-color: var(--color-surface-soft);
+
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.mission-card:hover {
+    border-color: rgb(199 255 0 / 65%);
+    transform: translateY(-7px);
+}
+
+.mission-art {
+    position: relative;
+    overflow: hidden;
+
+    height: clamp(175px, 18vw, 250px);
+    margin: calc(clamp(24px, 3vw, 42px) * -1) calc(clamp(24px, 3vw, 42px) * -1) 28px;
+
+    border-bottom: 1px solid #262626;
+
+    background-color: #090909;
+}
+
+.mission-art::before,
+.mission-art::after,
+.mission-art span {
+    position: absolute;
+
+    display: block;
+
+    content: "";
+}
+
+.mission-create .mission-art::before {
+    top: 17%;
+    left: 18%;
+
+    width: 42%;
+    aspect-ratio: 1;
+
+    border: 3px solid var(--color-accent);
+    border-radius: 50%;
+}
+
+.mission-create .mission-art::after {
+    right: 15%;
+    bottom: 18%;
+
+    width: 38%;
+    height: 34%;
+
+    border-radius: 14px;
+
+    background-color: #f0f0f0;
+
+    transform: rotate(-12deg);
+}
+
+.mission-create .mission-art span {
+    top: 22%;
+    right: 13%;
+
+    width: 22%;
+    height: 57%;
+
+    border-radius: 999px;
+
+    background-color: var(--color-accent);
+
+    transform: rotate(26deg);
+}
+
+.mission-learn .mission-art {
+    background:
+        linear-gradient(120deg, rgb(199 255 0 / 15%), transparent 45%),
+        #090909;
+}
+
+.mission-learn .mission-art::before {
+    top: 23%;
+    left: 17%;
+
+    width: 66%;
+    height: 48%;
+
+    border: 2px solid rgb(255 255 255 / 65%);
+    border-radius: 18px;
+
+    transform: rotate(4deg);
+}
+
+.mission-learn .mission-art::after {
+    top: 37%;
+    left: 30%;
+
+    width: 41%;
+    height: 4px;
+
+    background-color: var(--color-accent);
+
+    box-shadow: 0 20px 0 #6d6d6d, 0 40px 0 #6d6d6d;
+}
+
+.mission-connect .mission-art::before {
+    top: 20%;
+    left: 16%;
+
+    width: 23%;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background-color: var(--color-accent);
+
+    box-shadow: 140px 45px 0 #f1f1f1, 52px 85px 0 #404040;
+}
+
+.mission-connect .mission-art::after {
+    top: 42%;
+    left: 25%;
+
+    width: 54%;
+    height: 2px;
+
+    background-color: rgb(255 255 255 / 45%);
+
+    transform: rotate(17deg);
+}
+
+.mission-card > i {
+    margin-bottom: 13px;
+
+    color: var(--color-accent);
+
+    font-size: 1.35rem;
+}
+
+.mission-card h3 {
+    margin-bottom: 14px;
+
+    color: var(--color-accent);
+
+    font-size: clamp(1.65rem, 2.7vw, 2.65rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+}
+
+.mission-card p {
+    max-width: 36ch;
+    margin-bottom: 0;
+
+    color: var(--color-muted);
+
+    line-height: 1.65;
+}
+
+
+/* =========================
+   Committee Members
+========================= */
+
+.committee-section {
+    padding: 0 0 clamp(105px, 12vw, 175px);
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(18px, 2.2vw, 34px);
+}
+
+.member-card {
+    position: relative;
+    overflow: hidden;
+
+    padding: 10px 10px 26px;
+
+    border: 1px solid #222222;
+    border-radius: var(--card-radius);
+
+    background-color: var(--color-surface-soft);
+}
+
+.member-photo-frame {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 10px;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 22px;
+
+    border: 1px dashed #505050;
+    border-radius: calc(var(--card-radius) - 7px);
+
+    background:
+        radial-gradient(circle at 68% 32%, rgb(199 255 0 / 13%), transparent 22%),
+        linear-gradient(145deg, #181818, #0b0b0b);
+    color: #777777;
+
+    text-align: center;
+}
+
+.member-photo-frame > img{
+    display: block;
+    object-position: center;
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+}
+
+.member-photo-frame i {
+    color: #969696;
+
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    line-height: 1;
+}
+
+.member-photo-frame span {
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.member-card h3,
+.member-card > p,
+.leader-badge {
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.member-card h3 {
+    margin-bottom: 8px;
+
+    color: var(--color-text);
+
+    font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+    font-weight: 800;
+}
+
+.member-card > p {
+    margin-bottom: 0;
+
+    color: var(--color-accent);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.leader-badge {
+    display: inline-flex;
+
+    margin-bottom: 12px;
+    padding: 5px 10px;
+
+    border-radius: var(--pill-radius);
+
+    background-color: var(--color-accent);
+    color: #050505;
+
+    font-size: 0.68rem;
+    font-weight: 850;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.member-leader {
+    border-color: rgb(199 255 0 / 55%);
+}
+
+.member-leader .member-photo-frame {
+    border-style: solid;
+    border-color: rgb(199 255 0 / 45%);
+}
+
+
+/* =========================
+   Responsive Layout
+========================= */
+
+@media (max-width: 991px) {
+
+    .about-page-container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .about-page-hero {
+        padding-top: 16px;
+    }
+
+    .background-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .background-copy {
+        max-width: 720px;
+    }
+
+    .background-art {
+        min-height: 460px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        min-height: 0;
+    }
+
+    .mission-art {
+        height: 260px;
+    }
+
+    .committee-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+
+    .about-hero-box {
+        min-height: 270px;
+        padding: 52px 18px;
+
+        border-radius: 17px;
+    }
+
+    .about-hero-box h1 {
+        max-width: 8ch;
+        margin-bottom: 25px;
+
+        font-size: clamp(3rem, 16vw, 4.1rem);
+    }
+
+    .about-hero-topics {
+        gap: 9px 20px;
+
+        font-size: 0.82rem;
+    }
+
+    .about-hero-topics span:not(:last-child)::after {
+        right: -12px;
+
+        width: 4px;
+        height: 4px;
+    }
+
+    .club-background-section {
+        padding-top: 78px;
+        padding-bottom: 55px;
+    }
+
+    .background-copy h2 {
+        max-width: 9ch;
+        margin-bottom: 25px;
+    }
+
+    .background-copy > p:not(.section-kicker) {
+        font-size: 0.98rem;
+        line-height: 1.68;
+    }
+
+    .background-art {
+        min-height: 330px;
+
+        border-radius: 16px;
+    }
+
+    .art-panel-two {
+        right: 8%;
+    }
+
+    .mission-section {
+        padding-top: 55px;
+        padding-bottom: 90px;
+    }
+
+    .mission-section h2,
+    .committee-section h2 {
+        max-width: 10ch;
+    }
+
+    .mission-card {
+        padding: 22px;
+
+        border-radius: 16px;
+    }
+
+    .mission-art {
+        height: 205px;
+        margin: -22px -22px 24px;
+    }
+
+    .mission-connect .mission-art::before {
+        box-shadow: 105px 38px 0 #f1f1f1, 42px 68px 0 #404040;
+    }
+
+    .committee-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        max-width: 460px;
+
+        border-radius: 16px;
+    }
+
+    .member-photo-frame {
+        border-radius: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .mission-card {
+        transition: none;
+    }
+
+    .mission-card:hover {
+        transform: none;
+    }
+}
