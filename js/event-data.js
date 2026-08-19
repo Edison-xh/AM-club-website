@@ -161,7 +161,7 @@ function setupEventRegistrationModal() {
         }
 
         if (field.name === 'name' && field.validity.tooShort) {
-            return 'Your full name must be at least 2 characters.';
+            return 'Your full name must be at least 8 characters.';
         }
 
         if (field.validity.typeMismatch && field.name === 'email') {
@@ -280,11 +280,11 @@ function setupEventRegistrationModal() {
         const email = form.elements.email.value.trim();
 
         // Keep the submitted name readable and require at least eight characters.
-        if (name.length < 2) {
+        if (name.length < 8) {
             nameField.classList.add('input-is-invalid');
             nameField.setAttribute('aria-invalid', 'true');
             message.className = 'event-registration-message error';
-            message.textContent = 'Your full name must be at least 2 characters.';
+            message.textContent = 'Your full name must be at least 8 characters.';
             nameField.focus();
             return;
         }
@@ -359,4 +359,3 @@ function createEventCard(event) {
         </article>
     `;
 }
-

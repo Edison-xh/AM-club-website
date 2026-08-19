@@ -53,7 +53,7 @@ function getValidationMessage(field) {
     const label = field.closest('.form-field')?.querySelector('label')?.textContent.replace('*', '').trim() || 'This field';
 
     if (field.validity.valueMissing) return `${label} is required.`;
-    if (field.name === 'name' && field.validity.tooShort) return 'Your full name must be at least 2 characters.';
+    if (field.name === 'name' && field.validity.tooShort) return 'Your full name must be at least 8 characters.';
     if (field.validity.typeMismatch && field.type === 'email') return 'Enter a valid email address, for example name@example.com.';
 
     return `Please enter a valid ${label.toLowerCase()}.`;
