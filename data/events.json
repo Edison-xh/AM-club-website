@@ -7,7 +7,7 @@
         "end": "2026-09-18T17:00:00+08:00",
         "venue": "Animation Lab",
         "category": "Graphic Design",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/digital-multimedia-workshop.png",
         "imageAlt": "Creative multimedia workshop event preview",
         "registrationLink": "contact.html"
     },
@@ -19,7 +19,7 @@
         "end": "2026-09-15T17:00:00+08:00",
         "venue": "Seminar Room",
         "category": "Talk & Seminars",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/digital-design-talk.png",
         "imageAlt": "Digital design talk event preview",
         "registrationLink": "contact.html"
     },
@@ -31,7 +31,7 @@
         "end": "2026-10-02T17:00:00+08:00",
         "venue": "Media Studio",
         "category": "Video Production",
-        "image": "images/Create.jpeg",
+        "image": "images/events/video-editing-session.png",
         "imageAlt": "Video editing session event preview",
         "registrationLink": "contact.html"
     },
@@ -43,7 +43,7 @@
         "end": "2026-10-09T18:00:00+08:00",
         "venue": "Creative Room",
         "category": "Talk & Seminars",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/portfolio-sharing.png",
         "imageAlt": "Portfolio sharing event preview",
         "registrationLink": "contact.html"
     },
@@ -55,7 +55,7 @@
         "end": "2026-04-18T16:00:00+08:00",
         "venue": "Animation Lab",
         "category": "Animation",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/introduction-to-3d-modelling.png",
         "imageAlt": "Introduction to 3D modelling event preview",
         "registrationLink": "contact.html"
     },
@@ -67,7 +67,7 @@
         "end": "2026-05-09T17:00:00+08:00",
         "venue": "Creative Room",
         "category": "Animation",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/storyboarding-fundamentals.png",
         "imageAlt": "Storyboarding fundamentals event preview",
         "registrationLink": "contact.html"
     },
@@ -79,7 +79,7 @@
         "end": "2026-06-18T12:00:00+08:00",
         "venue": "UTAR Kampar",
         "category": "Photography",
-        "image": "images/Create.jpeg",
+        "image": "images/events/photography-walk.png",
         "imageAlt": "Photography walk event preview",
         "registrationLink": "contact.html"
     },
@@ -92,7 +92,7 @@
         "end": "2026-09-18T17:00:00+08:00",
         "venue": "Main Hall",
         "category": "Animation",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/motion-graphics-showcase.png",
         "imageAlt": "Motion graphics showcase event preview",
         "registrationLink": "contact.html"
     },
@@ -105,7 +105,7 @@
         "end": "2026-02-18T17:00:00+08:00",
         "venue": "Main Hall",
         "category": "Animation",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/motion-graphics-2-showcase.png",
         "imageAlt": "Motion graphics showcase event preview",
         "registrationLink": "contact.html"
     },
@@ -117,7 +117,7 @@
         "end": "2026-09-22T13:00:00+08:00",
         "venue": "Creative Room",
         "category": "Graphic Design",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/ui-design-sprint.png",
         "imageAlt": "UI design sprint event preview",
         "registrationLink": "contact.html"
     },
@@ -129,7 +129,7 @@
         "end": "2026-09-26T17:00:00+08:00",
         "venue": "Art Studio",
         "category": "Graphic Design",
-        "image": "images/Create.jpeg",
+        "image": "images/events/illustration-jam.png",
         "imageAlt": "Illustration jam event preview",
         "registrationLink": "contact.html"
     },
@@ -141,7 +141,7 @@
         "end": "2026-09-29T17:30:00+08:00",
         "venue": "Media Studio",
         "category": "Video Production",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/podcast-production-basics.png",
         "imageAlt": "Podcast production basics event preview",
         "registrationLink": "contact.html"
     },
@@ -153,7 +153,7 @@
         "end": "2026-10-06T17:00:00+08:00",
         "venue": "Computer Lab 2",
         "category": "Graphic Design",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/creative-coding-lab.png",
         "imageAlt": "Creative coding lab event preview",
         "registrationLink": "contact.html"
     },
@@ -165,7 +165,7 @@
         "end": "2026-10-13T21:00:00+08:00",
         "venue": "Main Hall",
         "category": "Video Production",
-        "image": "images/Create.jpeg",
+        "image": "images/events/short-film-screening.png",
         "imageAlt": "Short film screening event preview",
         "registrationLink": "contact.html"
     },
@@ -177,7 +177,7 @@
         "end": "2026-10-17T13:00:00+08:00",
         "venue": "Animation Lab",
         "category": "Animation",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/character-animation-workshop.png",
         "imageAlt": "Character animation workshop event preview",
         "registrationLink": "contact.html"
     },
@@ -189,7 +189,7 @@
         "end": "2026-10-20T17:00:00+08:00",
         "venue": "Photography Studio",
         "category": "Photography",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/studio-lighting-clinic.png",
         "imageAlt": "Studio lighting clinic event preview",
         "registrationLink": "contact.html"
     },
@@ -201,7 +201,7 @@
         "end": "2026-10-24T17:00:00+08:00",
         "venue": "Seminar Room",
         "category": "Talk & Seminars",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/design-career-panel.png",
         "imageAlt": "Design career panel event preview",
         "registrationLink": "contact.html"
     },
@@ -213,7 +213,7 @@
         "end": "2026-10-27T13:00:00+08:00",
         "venue": "Creative Room",
         "category": "Graphic Design",
-        "image": "images/Create.jpeg",
+        "image": "images/events/brand-identity-workshop.png",
         "imageAlt": "Brand identity workshop event preview",
         "registrationLink": "contact.html"
     },
@@ -225,7 +225,7 @@
         "end": "2026-11-03T17:00:00+08:00",
         "venue": "Media Studio",
         "category": "Video Production",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/sound-design-for-video.png",
         "imageAlt": "Sound design for video event preview",
         "registrationLink": "contact.html"
     },
@@ -237,7 +237,7 @@
         "end": "2026-11-07T13:00:00+08:00",
         "venue": "Animation Lab",
         "category": "Animation",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/clay-modelling-session.png",
         "imageAlt": "Clay modelling session event preview",
         "registrationLink": "contact.html"
     },
@@ -249,7 +249,7 @@
         "end": "2026-11-10T12:00:00+08:00",
         "venue": "UTAR Kampar",
         "category": "Photography",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/campus-photo-challenge.png",
         "imageAlt": "Campus photo challenge event preview",
         "registrationLink": "contact.html"
     },
@@ -261,7 +261,7 @@
         "end": "2026-11-14T16:30:00+08:00",
         "venue": "Seminar Room",
         "category": "Graphic Design",
-        "image": "images/Create.jpeg",
+        "image": "images/events/typography-masterclass.png",
         "imageAlt": "Typography masterclass event preview",
         "registrationLink": "contact.html"
     },
@@ -273,7 +273,7 @@
         "end": "2026-11-17T17:00:00+08:00",
         "venue": "Creative Room",
         "category": "Talk & Seminars",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/documentary-story-circle.png",
         "imageAlt": "Documentary story circle event preview",
         "registrationLink": "contact.html"
     },
@@ -285,7 +285,7 @@
         "end": "2026-11-21T13:00:00+08:00",
         "venue": "Animation Lab",
         "category": "Animation",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/stop-motion-lab.png",
         "imageAlt": "Stop motion lab event preview",
         "registrationLink": "contact.html"
     },
@@ -297,7 +297,7 @@
         "end": "2026-11-24T17:00:00+08:00",
         "venue": "Computer Lab 2",
         "category": "Photography",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/portrait-retouching-workshop.png",
         "imageAlt": "Portrait retouching workshop event preview",
         "registrationLink": "contact.html"
     },
@@ -309,7 +309,7 @@
         "end": "2026-11-28T17:00:00+08:00",
         "venue": "Main Hall",
         "category": "Graphic Design",
-        "image": "images/Create.jpeg",
+        "image": "images/events/game-art-showcase.png",
         "imageAlt": "Game art showcase event preview",
         "registrationLink": "contact.html"
     },
@@ -321,7 +321,7 @@
         "end": "2026-12-01T17:00:00+08:00",
         "venue": "Media Studio",
         "category": "Video Production",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/camera-movement-workshop.png",
         "imageAlt": "Camera movement workshop event preview",
         "registrationLink": "contact.html"
     },
@@ -333,7 +333,7 @@
         "end": "2026-12-05T13:00:00+08:00",
         "venue": "Animation Lab",
         "category": "Animation",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/3d-texturing-basics.png",
         "imageAlt": "3D texturing basics event preview",
         "registrationLink": "contact.html"
     },
@@ -345,7 +345,7 @@
         "end": "2026-12-08T21:30:00+08:00",
         "venue": "Kampar Old Town",
         "category": "Photography",
-        "image": "images/Connect.jpeg",
+        "image": "images/events/night-photography-walk.png",
         "imageAlt": "Night photography walk event preview",
         "registrationLink": "contact.html"
     },
@@ -357,7 +357,7 @@
         "end": "2026-12-12T17:00:00+08:00",
         "venue": "Seminar Room",
         "category": "Talk & Seminars",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/freelance-creative-talk.png",
         "imageAlt": "Freelance creative talk event preview",
         "registrationLink": "contact.html"
     },
@@ -369,7 +369,7 @@
         "end": "2026-12-15T13:00:00+08:00",
         "venue": "Creative Room",
         "category": "Graphic Design",
-        "image": "images/Create.jpeg",
+        "image": "images/events/poster-design-challenge.png",
         "imageAlt": "Poster design challenge event preview",
         "registrationLink": "contact.html"
     },
@@ -381,7 +381,7 @@
         "end": "2026-12-19T17:00:00+08:00",
         "venue": "Media Studio",
         "category": "Video Production",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/music-video-concept-lab.png",
         "imageAlt": "Music video concept lab event preview",
         "registrationLink": "contact.html"
     },
@@ -393,7 +393,7 @@
         "end": "2026-12-22T17:00:00+08:00",
         "venue": "Main Hall",
         "category": "Talk & Seminars",
-        "image": "images/Learn.jpeg",
+        "image": "images/events/showreel-review-session.png",
         "imageAlt": "Showreel review session event preview",
         "registrationLink": "contact.html"
     },
@@ -405,7 +405,7 @@
         "end": "2026-12-26T17:00:00+08:00",
         "venue": "Main Hall",
         "category": "Talk & Seminars",
-        "image": "images/upcomingEvent.webp",
+        "image": "images/events/year-end-creative-exhibition.png",
         "imageAlt": "Year-end creative exhibition event preview",
         "registrationLink": "contact.html"
     }
